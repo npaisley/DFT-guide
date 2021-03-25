@@ -9,25 +9,49 @@ This guide is intended to teach you how to run DFT calculations. My experience i
 ### Required Programs
 Running DFT calculations wil require you to model compounds of interest, make plain text input files, move files to and from remote servers, access remote servers from the command line, and analyze calculation data. The programs you will use to do this differ depending on the operating system you are using but I will give suggestions below (based on experience running DFT on each the three major operating systems).  
 #### Windows
-##### Molecular modelling:  
-##### Text editor:  
+##### molecular modelling:  
+Avogadro
+Chemdraw / Chem3D  
+GaussView*  
+##### text editor:  
+Notepad++
 ##### sftp client:  
-##### ssh client:  
+winSCP  
+MobaXTerm  
+##### comand line interface:  
+windows subsystem for linux  
+MobaXTerm  
 ##### result analysis:  
-
-#### MacOS
-##### Molecular modelling:  
-##### Text editor:  
+Avogadro  
+Notepad++  
+GaussView*  
+#### MacOS  
+##### molecular modelling:  
+Avogadro  
+Chemdraw / Chem3D  
+##### text editor:  
+TextMate  
 ##### sftp client:  
-##### ssh client:  
-##### result analysis:
-
+Cyberduck  
+##### command line interface:  
+iTerm  
+MacOS terminal  
+##### result analysis:  
+Avogadro  
+TextMate  
 #### Linux
-##### Molecular modelling:  
-##### Text editor:  
-##### sftp and ssh client:  
-##### result analysis:
-
+##### molecular modelling:  
+Avogadro  
+GaussView*  
+##### text editor, sftp client, and command line interface:  
+Whatever text editor, file explorer, and terminal applications are included in the flavour of linux you are using will certainly accomplish these tasks. If the text editor that is included is not to your liking I would suggest Geany as an alternative.  
+##### result analysis:  
+Avogadro  
+Text editor  
+GaussView*  
+*GaussView is a payed for application made by the same company that makes Gaussian. If you are fortunate you will have access to a version you can run remotely (as long as you have enabled X11 forwarding when you connect to the server with GaussView installed).  
+## The Basics (aka. What the Hell is SSH, SFTP, Bash, a terminal...)   
+## Getting Started  
 ### Setting up a Compute Canada Account
 ### Accessing Compute Canada Servers
 ### Accessing The Gaussian Computational Chemistry Package

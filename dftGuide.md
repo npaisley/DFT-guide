@@ -119,6 +119,7 @@ myFirstCalculation.com
 ### Transferring Your File
 ### Submitting Your Calulation
 ### How to Know When The Calculation is Finished
+opt freq and opt=readfc freq max. If need more need higher int grid  
 ### Verifying Your Optimized Structure
 ### Running a Frequency Calculation
 ### Analyzing Your Results

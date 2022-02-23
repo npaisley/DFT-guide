@@ -1,6 +1,6 @@
 # A Guide to Density Functional Theory Calculations  
 Written by Nathan Paisley  
-March, 2021  
+2022  
 
  
 ---
@@ -88,8 +88,13 @@ Line endings, ssh, sftp, bash, terminal, server, resources, bash crash course/a 
 
 
 ### Setting up a Compute Canada Account
+1. Set up a Compute Canada account at this [Link](https://ccdb.computecanada.ca/security/login) following the instructions on this [page](https://www.computecanada.ca/research-portal/account-management/apply-for-an-account/).  
+2. Make sure Zac approves your application
 ### Accessing Compute Canada Servers
+Once your account is set up try logging into a compute canada server. Do this by opening a Bash terminal and typing `ssh -C <username for compute canada>@<compute canada server>` (replace the angle brackets and everything inside with your compute canada username or server name) and enter your password when prompted (if the blinking cursor doesn’t move thats fine, this is normal). For example, I would enter `ssh -C npaisley@graham.computecanada.ca` to log into the graham server.  
 ### Accessing The Gaussian Computational Chemistry Package
+Once you have logged in try loading gaussian. Do this by typing `module load gaussian`. If it is your first time loading gaussian you will be presented with a block of text requesting you to agree to some terms. Copy this text saying you agree to the terms and email it to the email address specified (make sure to mention your compute canada user name). This will grant you access to gaussian on all compute canada servers. (additional information on the compute canada [website](https://docs.computecanada.ca/wiki/Gaussian).  
+You can get access to other program packages (ex. Orca) in the same way. For example, trying to load Orca for the first time will prompt you to agree to the terms required (ex. `module load orca`).  
 ## Calculation Overview 
 ### The Basics
 aka. why do we run DFT this way. why not on our computers. how does the server work.

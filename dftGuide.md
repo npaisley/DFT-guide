@@ -2,15 +2,14 @@
 Written by Nathan Paisley  
 March, 2021  
 
-## Table of Contents
-[TOC]  
+ 
 ---
 ## The Purpose of This Guide
-This guide is intended to teach you how to run DFT calculations. My experience is with using DFT for optimizing structures, ensuring the lowest energy conformation has been found, and getting excited state data and that is what is covered in this guide. For background theory on DFT and computational chemistry (I would recommend the book *Introduction to Computational chemistry* by Frank Jensen) or information on running other types of calculations you will have to do further reading. 
+This guide is intended to help teach you how to run DFT calculations. My experience is with using DFT for optimizing structures, ensuring the lowest energy conformation has been found, and getting excited state data and that is what is covered in this guide. For background theory on DFT and computational chemistry (I would recommend the book *Introduction to Computational chemistry* by Frank Jensen) or information on running other types of calculations you will have to do further reading. There are a number of great resources online by which to learn about DFT and how to run calculations so this guide will primarily consist of a list of resources for specific topics.
 
 ## Getting Started
 ### Required Programs
-Running DFT calculations wil require you to model compounds of interest, make plain text input files, move files to and from remote servers, access remote servers from the command line, and analyze calculation data. The programs you will use to do this differ depending on the operating system you are using but I will give suggestions below (based on experience running DFT on each the three major operating systems). I have provided links for programs whih are freely available for download.  
+Running DFT calculations will require you to model compounds of interest, make plain text input files, move files to and from remote servers, access remote servers from the command line, and analyze calculation data. The programs you will use to do this differ depending on the operating system you are using but I will give suggestions below (based on experience running DFT on each the three major operating systems). I have provided links for programs whih are freely available for download.  
 
 #### Windows  
 
@@ -49,7 +48,8 @@ Chemdraw / Chem3D
 [TextMate](https://macromates.com/)  
 
 ##### sftp client:  
-[Cyberduck](https://cyberduck.io/)  
+[Cyberduck](https://cyberduck.io/) (Its okay at best)  
+[filezilla](https://filezilla-project.org/) (I have never used this but I've heard it's good)  
 
 ##### command line interface:  
 [iTerm](https://iterm2.com/)  
@@ -65,7 +65,7 @@ Linux is awesome fo running DFT except for when it somes to making the input geo
 
 ##### molecular modelling:  
 Avogadro  (Version 1.2 should be available through your package manager)  
-ChemDraw / Chem3D<sup>b</sup>
+ChemDraw / Chem3D<sup>b</sup>  
 GaussView<sup>a</sup>  
 
 ##### text editor, sftp client, and command line interface:  
@@ -85,6 +85,8 @@ GaussView*
 Line endings, ssh, sftp, bash, terminal, server, resources, bash crash course/a handful of useful commands
 
 ## Getting Started  
+
+
 ### Setting up a Compute Canada Account
 ### Accessing Compute Canada Servers
 ### Accessing The Gaussian Computational Chemistry Package

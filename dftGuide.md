@@ -82,10 +82,31 @@ GaussView*
 
 ## The Basics (aka. What the Hell is SSH, SFTP, Bash, a terminal...)   
 
-Line endings, ssh, sftp, bash, terminal, server, resources, bash crash course/a handful of useful commands
+### The Bash shell  
+This is how you will communicate with the server but is also a very basic way of controlling your computer. The are many good resources online (links below) that cover how to navigate a file system all the way to writing custom scripts (aka. programs).  
+[Bash Scripting Tutorial for Beginners](https://linuxconfig.org/bash-scripting-tutorial-for-beginners)  
+[Introduction to Bash](https://cs.lmu.edu/~ray/notes/bash/)  
+
+### Highly Useful Commands  
+To learn more about each command or to refresh yourself on how to use it you can type `<command> --help` or `man <command>`. For more detailed explainations use google.
+|command|use|
+|-------|---|
+|`pwd` | print the current directory|
+|`cd`  | change directory|
+|`ls` | list the contents of a directory| 
+|`tail` | prints the last part of a plain text file|
+|`head` | prints the first part of a plain text file|
+|`cat` | prints an entire text file. Be careful with large files|
+|`grep` | search for a string within a file| 
+|`ssh` | secure shell. How you log on to another computer system|
+|`sftp` | secure file transfer protocol. Allows you to transfer files between your file systems (aka. network connected computers)|
+
+A very useful command line tool is the pipe "|". This sends the output from one program or command (aka. what is usually printed to your screen) to the input for another. An example is searching part of a file with grep (useful when trying to get important information out of very large output files). This could be done using `tail -n 1000 Calculation.log | grep "Energy"`.  
+
+### Wildcards
+* and ? can be used to replace unknown or variable strings. * is a string of any length and ? is one character. Very useful when dealing with a large amount of files that differ in small ways (ex. say you want to list all of the output files in a folder only. You could use `ls *.out` and only files matching that string, those ending with .out, will be listed).  
 
 ## Getting Started  
-
 
 ### Setting up a Compute Canada Account
 1. Set up a Compute Canada account at this [Link](https://ccdb.computecanada.ca/security/login) following the instructions on this [page](https://www.computecanada.ca/research-portal/account-management/apply-for-an-account/).  

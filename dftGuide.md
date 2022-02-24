@@ -94,6 +94,9 @@ To learn more about each command or to refresh yourself on how to use it you can
 |`pwd` | print the current directory|
 |`cd`  | change directory|
 |`ls` | list the contents of a directory| 
+|`mkdir` | make directory|
+|`cp` | copy |
+|`mv` | move. can also be used to rename files|
 |`tail` | prints the last part of a plain text file|
 |`head` | prints the first part of a plain text file|
 |`cat` | prints an entire text file. Be careful with large files|
@@ -104,7 +107,7 @@ To learn more about each command or to refresh yourself on how to use it you can
 A very useful command line tool is the pipe "|". This sends the output from one program or command (aka. what is usually printed to your screen) to the input for another. An example is searching part of a file with grep (useful when trying to get important information out of very large output files). This could be done using `tail -n 1000 Calculation.log | grep "Energy"`.  
 
 ### Wildcards
-* and ? can be used to replace unknown or variable strings. * is a string of any length and ? is one character. Very useful when dealing with a large amount of files that differ in small ways (ex. say you want to list all of the output files in a folder only. You could use `ls *.out` and only files matching that string, those ending with .out, will be listed).  
+? and * can be used to replace unknown or variable strings. * is a string of any length and ? is one character. Very useful when dealing with a large amount of files that differ in small ways (ex. say you want to list all of the output files in a folder only. You could use `ls *.out` and only files matching that string, those ending with .out, will be listed).  
 
 ## Getting Started  
 
@@ -118,16 +121,23 @@ Once you have logged in try loading gaussian. Do this by typing `module load gau
 You can get access to other program packages (ex. Orca) in the same way. For example, trying to load Orca for the first time will prompt you to agree to the terms required (ex. `module load orca`).  
 ## Calculation Overview 
 ### The Basics
-aka. why do we run DFT this way. why not on our computers. how does the server work.
-### Organization
-### Picking a Method
-### Best Practices
-## Running Your First Calculation: Geometry Optimization
-I am going to use your first calcultion to go over how the entire workflow works and good practice
-### Generating Your Input Structure
-### Making Your Gaussian Input File  
 
-myFirstCalculation.com
+### Organization
+I highly suggest making all files in your projects folder. After they are made move them to the scratch folder to run the calculation. Make files easy to type out and if you have a series of compounds keep the names similar as this facilitates running commands in loops (ex. a for loop to submit multiple calculations in a simple manner).  
+I would also suggest having a separate folder for each project, separate folders for each compound within, and separate folders for each stage of the calculation within that (ex. optimization, RSH Opt, TD, NTOs).  
+
+### Picking a Method
+literature search is your best friend here. It is essential to match your chosen method to the type of compound you are calculating.  
+
+## Running Your First Calculation: Geometry Optimization  
+
+### Generating Your Input Structure
+use avogadro, chem3D, gaussview, etc. If there is an option to run a molecular dynamics calculation within the program I would suggest you do that. This often gets you closer to a optimal structure and greatly speeds up the structural optimization by DFT.  
+
+### Making Your Gaussian Input File  
+Example input file below. The two blank lines at the end are quite important, if these are not included Gaussian will likely crash.  
+
+myFirstCalculation.com  
 
 ```
 %rwf=myFirstCalculation.rwf
